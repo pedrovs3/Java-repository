@@ -7,9 +7,9 @@ class Gasto{
         String tempo = line.readLine("Digite por quantas horas voce dirigiu: ");
         String velocidade = line.readLine("Digite a velocidade média durante a viagem: ");
 
-        double distancia = Double.parseDouble(tempo) * Double.parseDouble(velocidade);
+        float distancia = Double.parseDouble(tempo) * Double.parseDouble(velocidade);
 
-        double LITROS_USADOS = distancia / 12;
+        float LITROS_USADOS = distancia / 12;
         LITROS_USADOS = Math.round(LITROS_USADOS);
 
         System.out.println("A velocidade média do veículo é: " + velocidade + "KM/H" + "\nO tempo gasto foi de: " + tempo + " Horas" + "\nA distância percorrida foi: " + distancia +"KM" + "\nA quantidade de litros gasto na viagem foi de: " + LITROS_USADOS + "L");
