@@ -11,9 +11,11 @@ class Exe01Scan{
         System.out.println("Digite o segundo numero");
         int var2 = ler.nextInt();
 
-        double result = (var1 * 3 + 50) - (var2 - 25 /7);
-        System.out.println("O resultado e: " + result);
-
-
+        double soma = var1 + var2;
+        double multi = var1 * var2;
+        double sub = var1 - var2;
+        double div = var1 / var2;
+        
+        System.out.println("Soma: " + soma + "\n Subtração: " + sub + "\nMultiplicação: " + multi + "\n Divisão: " + div);
     }
 }
