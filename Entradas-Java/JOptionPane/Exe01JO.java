@@ -4,15 +4,18 @@ class Exe01JO{
     public static void main(String arg[]){
         JOptionPane jp = new JOptionPane();
 
-        String var1Txt = jp.showInputDialog(null, "insira o primeiro valor");
-        int var1 = Integer.parseInt(var1Txt);
+        String num1txt = jp.showInputDialog(null, "insira o primeiro valor");
+        int num1 = Integer.parseInt(num1txt);
 
-        String var2Txt = jp.showInputDialog(null, "insira o segundo valor");
-        int var2 = Integer.parseInt(var2Txt);
+        String num2txt = jp.showInputDialog(null, "insira o segundo valor");
+        int num2 = Integer.parseInt(num2txt);
 
-        double result = (var1 * 3 + 50) - (var2 - 25 /7);
+        double soma = num1 + num2;
+        double div = num1 / num2;
+        double multi = num1 * num2;
+        double sub = num1 - num2;
 
-        jp.showMessageDialog(null, "o resultado total é: " + result);
+        jp.showMessageDialog(null, "soma: " + soma + "\n Divisão: " + div + "\nmultiplição:" + multi + "\n subtração:" + sub);
 
     }
 }
