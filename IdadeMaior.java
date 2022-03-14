@@ -7,16 +7,15 @@ class IdadeMaior{
         System.out.println("Digite sua Idade: ");
         int idade = ler.nextInt();
 
-
-        if(idade >= 1 && idade <= 120){
-            if (idade >= 18) {
+        if(idade >= 0 && idade <= 150){
+            if (idade >= 18){
                 System.out.print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-                System.out.print("\n        Liberado!");
+                System.out.print("\n        Maior de Idade.");
                 System.out.print("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
             }
             else{
                 System.out.print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-                System.out.print("\n        Menor de Idade!");
+                System.out.print("\n        Menor de Idade.");
                 System.out.print("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
             }
         }
