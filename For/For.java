@@ -8,10 +8,12 @@ class For {
             System.out.print(i + ", ");
         }
         
-        System.out.println("\nDeseja continuar? [1(Sim)/2(Nao)]");
-        Short cont = ler.nextShort();
-
-        if (cont == 1) {
+        System.out.println("\nDeseja continuar? [Sim/Nao]");
+        String cont = ler.next().
+                          substring(0,1).
+                          toUpperCase();
+        
+        if (cont.equals("S")) {
             System.out.print("Mais quantos valores? ");
             int val = ler.nextInt();
 
