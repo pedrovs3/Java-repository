@@ -20,8 +20,7 @@ class For {
             for (int i = 50; i <= 51 -1 + val; i+=1){
                 System.out.print(i + ", ");
             }
-        }
-        else{
+        } else {
             System.out.print("Programa Finalizado.");
         }
     }
