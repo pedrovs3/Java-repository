@@ -2,22 +2,23 @@ import java.util.Scanner;
 
 public class Matriz {
     public static void main(String[] args) {
-        Scanner ler = new Scanner(System.in);
-
         double m[][] = new double[2][2];
 
+        entrada(m);
+
+        System.out.printf("O menor valor da matriz é %s\nO maior valor da matriz é %s\nA media da matriz é %s\nOs valores da matriz são: \n", menor(m), maior(m), media(m));
+        exibir(m);
+    }
+
+    public static void entrada(double m[][]){
+        Scanner ler = new Scanner(System.in);
+        
         for (int line = 0; line < m.length; line++) {
             for (int col = 0; col < m[0].length; col++) {
                 System.out.print("Digite um numero: ");
                 m[line][col] = ler.nextInt();
             }
         }
-
-        System.out.printf("O menor valor da matriz é %s\n", menor(m));
-        System.out.printf("O maior valor da matriz é %s\n", maior(m));
-        System.out.printf("A media da matriz é %s\n", media(m));
-        System.out.print("Os valores da matriz são: \n");
-        exibir(m);
     }
 
     public static double menor(double m[][]) {
