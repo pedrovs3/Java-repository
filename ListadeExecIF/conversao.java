@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Conversao {
+class conversao {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
@@ -17,16 +17,16 @@ class Conversao {
             float dam = m / 10;
             System.out.printf("Esse valor em dam é: %.2f dam\n", dam);
 
-            System.out.printf("O valor em M é: %fM\n", m);
+            System.out.printf("O valor em M é: %.0fM\n", m);
 
             float dm = m * 10;
-            System.out.printf("Esse valor em dm é: %.2f dm\n", dm);
+            System.out.printf("Esse valor em dm é: %.0f dm\n", dm);
 
             float cm = m * 100;
-            System.out.printf("Esse valor em cm é: %fcm \n", cm);
+            System.out.printf("Esse valor em cm é: %.0fcm \n", cm);
 
             float mm = m * 1000;
-            System.out.printf("Esse valor em mm é: %fmm \n", mm);
+            System.out.printf("Esse valor em mm é: %.0fmm \n", mm);
         }
         else{
             System.out.print("O valor nao foi digitado em metros!");
